@@ -2,6 +2,15 @@
 
 Agent skills for [looot](https://looot.ai): one key and one prepaid balance for 2,500+ data API endpoints from 90+ providers. Each folder under `skills/` is one skill in the [Agent Skills](https://agentskills.io) format (`SKILL.md` with `name` and `description` frontmatter). The agent searches the catalog, sees the price before it runs, and pays per call. A failed call costs nothing. Top up from $5.
 
+## Install for agents
+
+```bash
+npx skills add loootai/looot-skills
+claude mcp add --transport http looot https://api.looot.ai/mcp
+```
+
+See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use-cases) (copy-paste recipes) and [awesome-gtm](https://github.com/loootai/awesome-gtm) (open-source GTM tools).
+
 ## Install
 
 ```bash
