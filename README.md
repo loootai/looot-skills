@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/github/license/loootai/looot-skills)](LICENSE) [![Release](https://img.shields.io/github/v/release/loootai/looot-skills)](https://github.com/loootai/looot-skills/releases) [![Docs](https://img.shields.io/badge/docs-docs.looot.ai-12A06A)](https://docs.looot.ai)
 
-Agent skills for [looot](https://looot.ai): one key and one prepaid balance for 2,500+ data API endpoints from 90+ providers. Each folder under `skills/` is one skill in the [Agent Skills](https://agentskills.io) format (`SKILL.md` with `name` and `description` frontmatter). The agent searches the catalog, sees the price before it runs, and pays per call. A failed call costs nothing. Top up from $5.
+Agent skills for [looot](https://looot.ai): one key and one prepaid balance for 4,200+ data API endpoints from 300+ providers. Each folder under `skills/` is one skill in the [Agent Skills](https://agentskills.io) format (`SKILL.md` with `name` and `description` frontmatter). The agent searches the catalog, sees the price before it runs, and pays per call. A failed call costs nothing. Top up from $5.
 
 ## Install for agents
 
