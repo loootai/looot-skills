@@ -1,0 +1,19 @@
+{
+  "name": "looot-skills",
+  "description": "Agent skills for looot: 20 data jobs plus the base skill. Search, price and run 4,200+ data endpoints from 300+ providers.",
+  "owner": {
+    "name": "looot",
+    "url": "https://looot.ai"
+  },
+  "plugins": [
+    {
+      "name": "looot-skills",
+      "source": "./",
+      "strict": false,
+      "description": "Skills for work email and phone lookup, email verification, company and person enrichment, SERP, keyword volume, backlinks, reviews, ads and transcripts through looot.",
+      "category": "data",
+      "homepage": "https://looot.ai",
+      "keywords": ["agent-skills", "looot", "data-enrichment", "lead-generation", "serp", "email-verification"]
+    }
+  ]
+}
