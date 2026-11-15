@@ -61,3 +61,9 @@ Give total backlinks and referring domains first, then the top anchors. Flag spa
 Use `looot-domain-keywords` instead when you want what the site ranks for, not who links to it.
 
 Page for people: https://looot.ai/agent-skills/backlink-checker
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-backlink-checker)

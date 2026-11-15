@@ -64,3 +64,9 @@ Return the number, its line type and the match confidence. Say plainly when noth
 Use `looot-enrich-a-person` instead when you need the title, employer and location around the number, not only the number.
 
 Page for people: https://looot.ai/agent-skills/find-phone-numbers
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-find-phone-numbers)

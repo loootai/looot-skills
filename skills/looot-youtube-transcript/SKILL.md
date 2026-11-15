@@ -61,3 +61,9 @@ Return the plain text first and offer the timestamped version. Say when a video 
 Use `looot-reddit-search` instead when you want what people say about a topic, not the words of one video.
 
 Page for people: https://looot.ai/agent-skills/youtube-transcript
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-youtube-transcript)

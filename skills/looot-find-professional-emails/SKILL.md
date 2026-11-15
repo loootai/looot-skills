@@ -63,3 +63,9 @@ Give the email, its verification status and the confidence score on one line. Ne
 Use `looot-enrich-a-person` instead when you already hold a LinkedIn URL or an email and want the whole profile, not just an address.
 
 Page for people: https://looot.ai/agent-skills/find-professional-emails
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-find-professional-emails)

@@ -62,3 +62,9 @@ List caption, author, views, likes and link, sorted by views. Say the keyword an
 Use `looot-reddit-search` instead when you want written discussion, not short videos.
 
 Page for people: https://looot.ai/agent-skills/tiktok-search
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-tiktok-search)

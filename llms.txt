@@ -1,17 +1,37 @@
 # looot-skills
 
-> Agent skills for looot: 20 data jobs plus the base skill, installable with npx skills add loootai/looot-skills.
+> Agent skills for looot: 10 skills that run free, 20 paid data jobs and the base skill. Install with npx skills add loootai/looot-skills, or as a Claude Code plugin with /plugin marketplace add loootai/looot-skills then /plugin install looot-skills@looot-skills.
 
-looot is one key and one prepaid balance for 4,200+ data API endpoints from 300+ providers. The agent searches the catalog, sees the price before it runs, and pays per call.
+looot is one key and one prepaid balance for 4,392 data API endpoints from 324 providers. The agent searches the catalog, sees the price before it runs, and pays per call. There is no trial credit, so the first paid run needs a $5 top-up. Searching and inspecting are free, and $0 endpoints run on a new $0 workspace.
+
+## Free skills ($0 per run, no top-up needed)
+
+- looot-website-tech-stack: technology groups a domain uses (BuiltWith free API)
+- looot-cve-exploited-check: whether a CVE is on the CISA known exploited list, with CVSS (NIST NVD)
+- looot-clinical-trials-search: clinical studies by condition, drug, sponsor or place (ClinicalTrials.gov)
+- looot-lei-company-lookup: a company's LEI, legal name and addresses (GLEIF)
+- looot-sec-filings: a US public company's CIK, profile and recent filings (SEC EDGAR)
+- looot-research-papers: papers by topic with citations and DOI (OpenAlex)
+- looot-npm-package-check: npm package version, license, provenance and security advisories (npm registry, OSV.dev)
+- looot-vehicle-recalls: VIN decode and US safety recalls (NHTSA)
+- looot-fda-drug-recalls: FDA drug recall enforcement reports (openFDA)
+- looot-sanctions-check: a name against the OFAC SDN, UK and EU sanctions lists
+
+## Paid skills (needs a $5 top-up)
+
+looot-ai-search-visibility, looot-amazon-product, looot-backlink-checker, looot-company-email-format, looot-company-list-builder, looot-domain-keywords, looot-email-verification, looot-enrich-a-company, looot-enrich-a-person, looot-find-phone-numbers, looot-find-professional-emails, looot-google-maps-reviews, looot-google-serp, looot-job-postings, looot-keyword-volume, looot-local-business-search, looot-meta-ads-library, looot-reddit-search, looot-tiktok-search, looot-youtube-transcript
 
 ## Install
 
 - Remote MCP server: `claude mcp add --transport http looot https://api.looot.ai/mcp`
+- CLI: npm install -g looot@1.4.0, then looot login
 - This repo: npx skills add loootai/looot-skills
+- Claude Code plugin: /plugin marketplace add loootai/looot-skills, then /plugin install looot-skills@looot-skills
 
 ## Links
 
-- Docs: https://docs.looot.ai
-- Pricing: prepaid balance (top up from $5), charged per call, failed calls are free
+- Site: https://looot.ai/?utm_source=github&utm_medium=llms-txt&utm_campaign=looot-skills
+- Docs: https://docs.looot.ai/?utm_source=github&utm_medium=llms-txt&utm_campaign=looot-skills
+- Pricing: prepaid balance, top up from $5, charged per call, failed calls are free, no trial credit
 - Recipes: https://github.com/loootai/awesome-looot-use-cases
 - GTM tools list: https://github.com/loootai/awesome-gtm

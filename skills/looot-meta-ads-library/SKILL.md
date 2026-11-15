@@ -63,3 +63,9 @@ List each ad with its copy, format, platform and start date. Say whether each is
 Use `looot-google-serp` instead when you want what the company shows in Google search, not its Meta ads.
 
 Page for people: https://looot.ai/agent-skills/meta-ads-library
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-meta-ads-library)
