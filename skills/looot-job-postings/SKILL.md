@@ -61,3 +61,9 @@ List title, company, location, posted date and link. Say how old the newest post
 Use `looot-company-list-builder` instead when you want companies that match a profile, not the roles they post.
 
 Page for people: https://looot.ai/agent-skills/job-postings
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-job-postings)

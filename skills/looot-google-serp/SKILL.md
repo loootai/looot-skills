@@ -62,3 +62,9 @@ List position, title, domain and snippet for each result. Note ads, People Also 
 Use `looot-ai-search-visibility` instead when you want what an AI answer engine says, not the blue links.
 
 Page for people: https://looot.ai/agent-skills/google-serp
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-google-serp)

@@ -61,3 +61,9 @@ Summarize the themes with the star rating, quote at most a line from a review, a
 Use `looot-local-business-search` instead when you have no place yet and need to find businesses first.
 
 Page for people: https://looot.ai/agent-skills/google-maps-reviews
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-google-maps-reviews)

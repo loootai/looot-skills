@@ -62,3 +62,9 @@ Show a table of keyword, monthly volume, CPC and difficulty, sorted by volume. S
 Use `looot-domain-keywords` instead when you want the keywords one site already ranks for, not volume for a list you wrote.
 
 Page for people: https://looot.ai/agent-skills/keyword-volume
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-keyword-volume)

@@ -58,3 +58,9 @@ Give the pattern with an example, the share of addresses that follow it, and any
 Use `looot-find-professional-emails` instead when you want a confirmed address for one person, not the pattern.
 
 Page for people: https://looot.ai/agent-skills/company-email-format
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-company-email-format)

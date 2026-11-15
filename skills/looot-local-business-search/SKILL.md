@@ -63,3 +63,9 @@ Return name, address, rating, review count, website and phone as a table, and sa
 Use `looot-google-maps-reviews` instead when you already have a place and want to read its reviews.
 
 Page for people: https://looot.ai/agent-skills/local-business-search
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-local-business-search)

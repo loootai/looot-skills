@@ -65,3 +65,9 @@ Group addresses as deliverable, risky and undeliverable, and say how many are in
 Use `looot-find-professional-emails` instead when you have no address yet and need to find one first.
 
 Page for people: https://looot.ai/agent-skills/email-verification
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-email-verification)

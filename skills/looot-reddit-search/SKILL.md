@@ -60,3 +60,9 @@ List title, subreddit, score and link, then the common points across threads. Qu
 Use `looot-tiktok-search` instead when you want short video posts on a topic, not forum threads.
 
 Page for people: https://looot.ai/agent-skills/reddit-search
+
+## Cost per run
+
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+
+Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-reddit-search)
