@@ -1,0 +1,35 @@
+{
+  "name": "looot-skills",
+  "displayName": "looot skills",
+  "version": "0.2.0",
+  "description": "31 looot agent skills. 10 run free on $0 endpoints, 20 are paid data jobs (emails, enrichment, SERP, reviews, ads), plus the base skill. Searching and inspecting are free.",
+  "author": {
+    "name": "looot",
+    "url": "https://looot.ai"
+  },
+  "homepage": "https://looot.ai/?utm_source=github&utm_medium=plugin&utm_campaign=looot-skills&utm_content=plugin",
+  "keywords": [
+    "agent-skills",
+    "data-apis",
+    "free",
+    "sec-edgar",
+    "cve",
+    "sanctions",
+    "enrichment",
+    "seo",
+    "pay-per-call"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://looot.ai/privacy",
+  "supportUrl": "https://looot.ai/contact",
+  "repository": "https://github.com/loootai/looot-skills",
+  "documentationUrl": "https://docs.looot.ai",
+  "termsOfServiceUrl": "https://looot.ai/terms",
+  "license": "MIT",
+  "mcpServers": {
+    "looot": {
+      "type": "http",
+      "url": "https://api.looot.ai/mcp"
+    }
+  }
+}

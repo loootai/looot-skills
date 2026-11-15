@@ -1,0 +1,29 @@
+{
+  "name": "looot-skills",
+  "description": "31 agent skills for looot: 10 that run free and 20 paid data jobs, plus the base skill.",
+  "owner": {
+    "name": "looot",
+    "url": "https://looot.ai"
+  },
+  "plugins": [
+    {
+      "name": "looot-skills",
+      "source": "./",
+      "description": "31 looot skills. 10 run free (tech stack, CVE check, clinical trials, LEI, SEC filings, papers, npm check, vehicle recalls, FDA recalls, sanctions). 20 are paid data jobs.",
+      "version": "0.2.0",
+      "category": "data",
+      "keywords": [
+        "agent-skills",
+        "data-apis",
+        "free",
+        "sec-edgar",
+        "cve",
+        "sanctions",
+        "enrichment",
+        "seo",
+        "pay-per-call"
+      ],
+      "homepage": "https://looot.ai/?utm_source=github&utm_medium=plugin&utm_campaign=looot-skills&utm_content=marketplace"
+    }
+  ]
+}
