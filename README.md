@@ -8,6 +8,17 @@ Agent skills for [looot](https://looot.ai/?utm_source=github&utm_medium=readme&u
 
 There are 31 skills. Ten of them run free. Twenty are paid data jobs. `looot` is the base skill.
 
+## The looot plugin for Claude Code and Codex
+
+Want the looot MCP server with browser sign-in and the core flow (search, inspect, run, balance, top up) in one install? Use the `looot` plugin in [`plugins/`](plugins):
+
+| Client | Install | Sign in |
+| --- | --- | --- |
+| Claude Code | `/plugin marketplace add loootai/looot-skills` then `/plugin install looot@looot-skills` | `/mcp`, pick looot, Authenticate |
+| Codex | `codex plugin marketplace add loootai/looot-skills` then `codex plugin add looot@looot-skills` | `codex mcp login looot` |
+
+It adds three commands in Claude Code: `/looot:setup` (sign-in and a first free search), `/looot:find <job>` (compare providers and prices, runs nothing) and `/looot:balance [amount]` (credit and a Stripe top-up link). Details: [Claude Code plugin](plugins/claude-code/looot/README.md), [Codex plugin](plugins/codex/looot/README.md). The Codex skills are generated from the Claude Code ones by `python3 scripts/build-plugins.py`.
+
 ## Ten skills that run free
 
 These call $0 endpoints, so the run costs nothing and needs no top-up. looot has no trial credit and a new workspace starts at $0. looot refuses a run only when its price is above your balance, so a $0 endpoint runs on a new account. You still sign in once (`looot login`). Each skill below was run for real on 2026-11-15, and its "Example output" section is trimmed from that run.
@@ -101,8 +112,11 @@ The skill files are free. Searching and inspecting are free. The ten free skills
 ## Checks
 
 ```bash
-python3 tests/validate_plugin.py   # marketplace, plugin and skill files
-bash scripts/leak-scan.sh          # no keys, tokens or private hosts
+python3 tests/validate_plugin.py                                   # marketplaces, plugins and skill files
+python3 scripts/build-plugins.py --check                           # Codex skills match the Claude Code ones
+claude plugin validate --strict --profile directory plugins/claude-code/looot
+claude plugin eval plugins/claude-code/looot --no-publish          # 3 cases on a mocked looot server
+bash scripts/leak-scan.sh                                          # no keys, tokens or private hosts
 ```
 
 ## License

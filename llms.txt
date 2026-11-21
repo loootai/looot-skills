@@ -27,6 +27,7 @@ looot-ai-search-visibility, looot-amazon-product, looot-backlink-checker, looot-
 - CLI: npm install -g looot@1.4.0, then looot login
 - This repo: npx skills add loootai/looot-skills
 - Claude Code plugin: /plugin marketplace add loootai/looot-skills, then /plugin install looot-skills@looot-skills
+- looot plugin (MCP server, core skill, /looot:setup, /looot:find, /looot:balance): /plugin install looot@looot-skills in Claude Code, or codex plugin marketplace add loootai/looot-skills then codex plugin add looot@looot-skills in Codex
 
 ## Links
 

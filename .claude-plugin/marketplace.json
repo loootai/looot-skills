@@ -1,11 +1,29 @@
 {
   "name": "looot-skills",
-  "description": "31 agent skills for looot: 10 that run free and 20 paid data jobs, plus the base skill.",
+  "description": "looot for Claude Code: the looot plugin (MCP server, core skill, three commands) and 31 agent skills, 10 free and 20 paid data jobs, plus the base skill.",
   "owner": {
     "name": "looot",
     "url": "https://looot.ai"
   },
   "plugins": [
+    {
+      "name": "looot",
+      "source": "./plugins/claude-code/looot",
+      "description": "The looot MCP server with browser sign-in, a skill for the search, inspect, run, balance and top-up flow, and three commands: /looot:setup, /looot:find, /looot:balance.",
+      "version": "1.0.0",
+      "category": "data",
+      "keywords": [
+        "mcp",
+        "data-apis",
+        "enrichment",
+        "email-finder",
+        "seo",
+        "serp",
+        "web-scraping",
+        "pay-per-call"
+      ],
+      "homepage": "https://looot.ai/?utm_source=github&utm_medium=plugin&utm_campaign=looot-plugin&utm_content=marketplace"
+    },
     {
       "name": "looot-skills",
       "source": "./",
