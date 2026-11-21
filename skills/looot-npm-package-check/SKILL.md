@@ -9,7 +9,7 @@ Two free calls. The npm registry returns the package manifest for a version (lat
 
 ## Setup
 
-- CLI: `npm install -g looot@1.4.0`, then `looot login`. A new workspace starts at $0, and this skill runs at $0.
+- CLI: `npm install -g looot@1.4.0`, then `looot login`. This skill runs at $0, so it needs no credit.
 - MCP: `claude mcp add --transport http looot https://api.looot.ai/mcp`
 - Full guide: https://looot.ai/skill.md
 
@@ -55,11 +55,11 @@ OSV returned 5 advisories in all. None of them affects 5.3.0.
 
 ## Cost per run
 
-Cost per run: $0 (free, no top-up needed). Searching, inspecting and both runs are free. looot refuses a run only when its price is above your balance, so a $0 endpoint runs on a new $0 workspace. If `looot inspect` ever shows a price above $0, say so and ask before you run.
+Cost per run: $0 (free, no top-up needed). Searching, inspecting and both runs are free. looot refuses a run only when its price is above your balance, so a $0 endpoint runs even at a $0 balance. If `looot inspect` ever shows a price above $0, say so and ask before you run.
 
 ## Next step
 
-To hear what developers say about the package (migration pain, alternatives, breakage), run `looot-reddit-search`. It is a paid job and needs a $5 top-up.
+To hear what developers say about the package (migration pain, alternatives, breakage), run `looot-reddit-search`. It is a paid job: it runs on the $2 a new account gets once, then needs a $5 top-up.
 
 ## Manual fallback
 

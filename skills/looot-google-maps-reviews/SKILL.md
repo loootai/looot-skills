@@ -64,6 +64,6 @@ Page for people: https://looot.ai/agent-skills/google-maps-reviews
 
 ## Cost per run
 
-Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. looot has no trial credit, so the first paid run needs a top-up of $5 minimum.
+Cost per run: searching and inspecting are free. The run itself needs credit at the price `looot inspect` shows. A new account gets $2 of credit once, after its owner confirms the email and signs in; when that runs out, top-ups are $5 minimum.
 
 Powered by [looot](https://looot.ai/?utm_source=github&utm_medium=skill&utm_campaign=looot-skills&utm_content=looot-google-maps-reviews)
