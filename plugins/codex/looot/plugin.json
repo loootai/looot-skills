@@ -1,0 +1,50 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "looot",
+  "version": "1.0.0",
+  "description": "Search, price and run thousands of data APIs (emails, enrichment, SEO, social, web) from one looot account. The price shows before every call, failed calls are free.",
+  "author": {
+    "name": "looot",
+    "url": "https://looot.ai"
+  },
+  "homepage": "https://looot.ai/?utm_source=codex&utm_medium=plugin&utm_campaign=looot-plugin",
+  "repository": "https://github.com/loootai/looot-skills",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "data-apis",
+    "enrichment",
+    "email-finder",
+    "seo",
+    "serp",
+    "web-scraping",
+    "pay-per-call"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "looot",
+        "shortDescription": "Data APIs, priced per call",
+        "longDescription": "looot connects Codex to thousands of data API endpoints from hundreds of providers through one sign-in and one prepaid balance. Ask in plain words, such as \"find the work email of the head of sales at acme.com and verify it\" or \"what does Google show for best crm in the US\", and Codex searches the looot catalog by job, shows each provider's price and measured success rate, then runs the one you pick with fallback to the next provider.\n\nCovered: work email and phone finding, email verification, company and people enrichment, Google results, SEO and backlinks, social profiles and posts, web search and pages as text, news, ads, maps and finance.\n\nSearching the catalog, inspecting an endpoint and reading the balance are free. A run spends prepaid credit at the price shown first, and a call that fails costs nothing. Top-ups open a Stripe checkout page that you pay yourself.\n\nSign in with your looot account in the browser. looot stores your account email and workspace, each run's input, output, status and cost, and billing records, so you can read past runs back; see the privacy policy.",
+        "developerName": "looot",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://looot.ai",
+        "supportURL": "https://looot.ai/contact",
+        "privacyPolicyURL": "https://looot.ai/privacy",
+        "termsOfServiceURL": "https://looot.ai/terms",
+        "defaultPrompt": [
+          "Which tech stack does linear.app run?",
+          "Find the work email of the head of marketing at stripe.com.",
+          "What is my looot balance?"
+        ],
+        "brandColor": "#009362",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

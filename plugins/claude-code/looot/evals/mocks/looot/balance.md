@@ -1,0 +1,1 @@
+{"tool":"balance","data":{"currency":"USD","available":3.25,"reserved":0,"holds":[],"topUpLink":{"minimumUsd":5,"suggestedUsd":5,"dashboardUrl":"https://looot.ai/usage?top_up=1","checkoutUrl":null,"reason":"balance_sufficient"}}}

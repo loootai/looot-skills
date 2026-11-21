@@ -1,0 +1,28 @@
+{
+  "name": "looot",
+  "displayName": "looot",
+  "version": "1.0.0",
+  "description": "Search, price and run thousands of data APIs (emails, enrichment, SEO, social, web) from one looot account. The price shows before every call, failed calls are free.",
+  "author": {
+    "name": "looot",
+    "url": "https://looot.ai"
+  },
+  "homepage": "https://looot.ai/?utm_source=claude-code&utm_medium=plugin&utm_campaign=looot-plugin",
+  "repository": "https://github.com/loootai/looot-skills",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "data-apis",
+    "enrichment",
+    "email-finder",
+    "seo",
+    "serp",
+    "web-scraping",
+    "pay-per-call"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://docs.looot.ai/connect/claude-code",
+  "supportUrl": "https://looot.ai/contact",
+  "privacyPolicyUrl": "https://looot.ai/privacy",
+  "termsOfServiceUrl": "https://looot.ai/terms"
+}

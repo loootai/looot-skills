@@ -1,5 +1,10 @@
 """Checks the plugin layout and the skill files.
 
+Two plugins: looot-skills (the repo root, all 31 skills) and looot (plugins/claude-code/looot,
+the MCP server, the core skill and three commands), plus the Codex copy of looot in
+plugins/codex/looot, whose skills must match scripts/build-plugins.py and whose listing must fit
+the OpenAI submission limits.
+
 Every marketplace entry must point at a plugin folder with a manifest, a token-free
 MCP config and the repo's skills. The plugin is the repo root (source "./"), so the
 one skills/ folder ships as is, with no copy and no symlink. Every skill needs name and description frontmatter.
@@ -41,8 +46,55 @@ for p in market["plugins"]:
     if skills_dir.is_symlink():
         errors.append(f"{skills_dir.relative_to(root)} is a symlink: an installed plugin is copied to a cache and the link breaks")
     plugin_skills = sorted(s.parent.name for s in skills_dir.glob("*/SKILL.md"))
-    if plugin_skills != repo_skills:
+    if p["source"] == "./" and plugin_skills != repo_skills:
         errors.append(f"plugin {p['name']} ships {len(plugin_skills)} skills, the repo has {len(repo_skills)}")
+    if p["source"] != "./":
+        for s in skills_dir.glob("*/SKILL.md"):
+            if not re.match(r"^---\nname: " + re.escape(s.parent.name) + r"\ndescription: .+\n", s.read_text()):
+                errors.append(f"{s.relative_to(root)}: frontmatter needs name {s.parent.name} then description")
+        if not (folder / "README.md").exists() or not (folder / "LICENSE").exists():
+            errors.append(f"plugin {p['name']} needs its own README.md and LICENSE (the directory submits the folder)")
+        if plugin.get("icon") and not (folder / plugin["icon"]).exists():
+            errors.append(f"plugin {p['name']} icon {plugin['icon']} is missing")
+
+# Codex plugin: marketplace entry, manifest limits from the OpenAI submission page, assets, skills in sync
+cx_market = json.loads((root / ".agents/plugins/marketplace.json").read_text())
+for p in cx_market["plugins"]:
+    if "category" not in p:
+        errors.append(f"codex marketplace entry {p['name']} needs a category")
+    folder = root / p["source"]["path"]
+    cx = json.loads((folder / "plugin.json").read_text())
+    if cx.get("name") != p["name"]:
+        errors.append(f"codex plugin.json name {cx.get('name')} differs from its marketplace entry {p['name']}")
+    claude_version = json.loads((root / "plugins/claude-code/looot/.claude-plugin/plugin.json").read_text())["version"]
+    if cx.get("version") != claude_version:
+        errors.append("codex and claude-code plugin versions differ")
+    ui = cx["extensions"]["com.openai"]["interface"]
+    for key, most in [("displayName", 30), ("shortDescription", 30), ("longDescription", 4000), ("developerName", 80)]:
+        if not ui.get(key) or len(ui[key]) > most:
+            errors.append(f"codex interface.{key} is missing or longer than {most}")
+    if len(ui.get("defaultPrompt", [])) > 3 or any(len(x) > 128 for x in ui.get("defaultPrompt", [])):
+        errors.append("codex interface.defaultPrompt: at most 3 prompts of 128 characters")
+    for key in ["websiteURL", "supportURL", "privacyPolicyURL", "termsOfServiceURL"]:
+        if not str(ui.get(key, "")).startswith("https://"):
+            errors.append(f"codex interface.{key} must be an https URL")
+    for key in ["logo", "composerIcon"]:
+        img = folder / ui.get(key, "missing")
+        if not img.exists():
+            errors.append(f"codex interface.{key} file is missing")
+            continue
+        head = img.read_bytes()[:24]
+        w, h = int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+        if head[:8] != b"\x89PNG\r\n\x1a\n" or w != h or w < 48 or w > 4096:
+            errors.append(f"codex interface.{key} must be a square PNG between 48 and 4096 px")
+    mcp_text = (folder / "mcp.json").read_text()
+    if "https://api.looot.ai/mcp" not in mcp_text or "streamable-http" not in mcp_text:
+        errors.append("codex mcp.json must be the looot MCP over streamable-http")
+    if "headers" in mcp_text or "Bearer" in mcp_text:
+        errors.append("codex mcp.json must not carry headers or a token")
+import subprocess
+if subprocess.run([sys.executable, str(root / "scripts/build-plugins.py"), "--check"], capture_output=True).returncode:
+    errors.append("plugins/codex/looot/skills is stale: run python3 scripts/build-plugins.py")
 
 # Skill files
 free, paid = [], []
@@ -75,7 +127,7 @@ if len(paid) != 20: errors.append(f"expected 20 paid skills, found {len(paid)}")
 
 # Repo-wide text rules
 for f in root.rglob("*"):
-    if ".git" in f.parts or not f.is_file() or f.suffix not in {".md", ".txt", ".json", ".py", ".sh"}:
+    if ".git" in f.parts or "results" in f.parts or "dist" in f.parts or not f.is_file() or f.suffix not in {".md", ".txt", ".json", ".py", ".sh"}:
         continue
     t = f.read_text()
     if chr(0x2014) in t: errors.append(f"em dash in {f.relative_to(root)}")
