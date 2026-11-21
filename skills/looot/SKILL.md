@@ -24,7 +24,7 @@ looot is one MCP server at https://api.looot.ai/mcp. Sign-in is OAuth in the bro
 
 Add the server to your client (in Claude Code: `claude mcp add --transport http looot https://api.looot.ai/mcp`). If its tools are missing or answer 401, re-authenticate the server in your client (in Claude Code, run `/mcp`, pick looot, choose Authenticate), then pick the organization to bill on looot.ai and click Connect.
 
-Never ask the user to paste a token or password into the chat, and never write one into a file or URL. A bearer agent token is only for CI and headless agents, created at https://looot.ai/settings. A new workspace starts at $0 with no trial credit. After sign-in, call `balance` once.
+Never ask the user to paste a token or password into the chat, and never write one into a file or URL. A bearer agent token is only for CI and headless agents, created at https://looot.ai/settings. A new account gets $2 of credit once, added when its owner signs in with a confirmed email. After sign-in, call `balance` once.
 
 ## The method
 

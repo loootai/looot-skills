@@ -9,7 +9,7 @@ Two free EDGAR calls. The first turns a company name or ticker into its CIK (the
 
 ## Setup
 
-- CLI: `npm install -g looot@1.4.0`, then `looot login`. A new workspace starts at $0, and this skill runs at $0.
+- CLI: `npm install -g looot@1.4.0`, then `looot login`. This skill runs at $0, so it needs no credit.
 - MCP: `claude mcp add --transport http looot https://api.looot.ai/mcp`
 - Full guide: https://looot.ai/skill.md
 
@@ -56,11 +56,11 @@ Trimmed from two real runs on 2026-11-15 (`outcome: "hit"`, cost $0 each):
 
 ## Cost per run
 
-Cost per run: $0 (free, no top-up needed). Searching, inspecting and both runs are free. looot refuses a run only when its price is above your balance, so a $0 endpoint runs on a new $0 workspace. If `looot inspect` ever shows a price above $0, say so and ask before you run.
+Cost per run: $0 (free, no top-up needed). Searching, inspecting and both runs are free. looot refuses a run only when its price is above your balance, so a $0 endpoint runs even at a $0 balance. If `looot inspect` ever shows a price above $0, say so and ask before you run.
 
 ## Next step
 
-To see where the company is hiring and what roles it is adding, run `looot-job-postings`. It is a paid job and needs a $5 top-up.
+To see where the company is hiring and what roles it is adding, run `looot-job-postings`. It is a paid job: it runs on the $2 a new account gets once, then needs a $5 top-up.
 
 ## Manual fallback
 

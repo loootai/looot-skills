@@ -21,7 +21,7 @@ It adds three commands in Claude Code: `/looot:setup` (sign-in and a first free 
 
 ## Ten skills that run free
 
-These call $0 endpoints, so the run costs nothing and needs no top-up. looot has no trial credit and a new workspace starts at $0. looot refuses a run only when its price is above your balance, so a $0 endpoint runs on a new account. You still sign in once (`looot login`). Each skill below was run for real on 2026-11-15, and its "Example output" section is trimmed from that run.
+These call $0 endpoints, so the run costs nothing and needs no top-up. A new account gets $2 of credit once, after its owner confirms the email and signs in. looot refuses a run only when its price is above your balance, so a $0 endpoint runs on a new account. You still sign in once (`looot login`). Each skill below was run for real on 2026-11-15, and its "Example output" section is trimmed from that run.
 
 | Skill | What it returns | Source |
 | --- | --- | --- |
@@ -40,30 +40,30 @@ Cost per run for all ten: $0 (free, no top-up needed). If `looot inspect` ever s
 
 ## Paid data jobs
 
-These run on paid provider endpoints. Searching and inspecting are free. A run needs credit at the price `looot inspect` shows, so the first paid run needs a $5 top-up (the minimum). They are the same files looot publishes at https://looot.ai/agent-skills?utm_source=github&utm_medium=readme&utm_campaign=looot-skills.
+These run on paid provider endpoints. Searching and inspecting are free. A run needs credit at the price `looot inspect` shows. A new account gets $2 of credit once, which covers the first paid runs; after that, top-ups are $5 minimum. They are the same files looot publishes at https://looot.ai/agent-skills?utm_source=github&utm_medium=readme&utm_campaign=looot-skills.
 
 | Skill | What it does | Cost |
 | --- | --- | --- |
-| `looot-ai-search-visibility` | Check AI search visibility | needs a $5 top-up |
-| `looot-amazon-product` | Look up an Amazon product | needs a $5 top-up |
-| `looot-backlink-checker` | Check a domain's backlinks | needs a $5 top-up |
-| `looot-company-email-format` | Find a company's email format | needs a $5 top-up |
-| `looot-company-list-builder` | Build a company list | needs a $5 top-up |
-| `looot-domain-keywords` | Find the keywords a domain ranks for | needs a $5 top-up |
-| `looot-email-verification` | Verify an email address | needs a $5 top-up |
-| `looot-enrich-a-company` | Enrich a company | needs a $5 top-up |
-| `looot-enrich-a-person` | Enrich a person | needs a $5 top-up |
-| `looot-find-phone-numbers` | Find a phone number | needs a $5 top-up |
-| `looot-find-professional-emails` | Find a professional email | needs a $5 top-up |
-| `looot-google-maps-reviews` | Read Google Maps reviews | needs a $5 top-up |
-| `looot-google-serp` | Read a Google results page | needs a $5 top-up |
-| `looot-job-postings` | Search job postings | needs a $5 top-up |
-| `looot-keyword-volume` | Check keyword volume and CPC | needs a $5 top-up |
-| `looot-local-business-search` | Find local businesses | needs a $5 top-up |
-| `looot-meta-ads-library` | Read a company's Meta ads | needs a $5 top-up |
-| `looot-reddit-search` | Search Reddit | needs a $5 top-up |
-| `looot-tiktok-search` | Search TikTok | needs a $5 top-up |
-| `looot-youtube-transcript` | Get a YouTube transcript | needs a $5 top-up |
+| `looot-ai-search-visibility` | Check AI search visibility | paid per call |
+| `looot-amazon-product` | Look up an Amazon product | paid per call |
+| `looot-backlink-checker` | Check a domain's backlinks | paid per call |
+| `looot-company-email-format` | Find a company's email format | paid per call |
+| `looot-company-list-builder` | Build a company list | paid per call |
+| `looot-domain-keywords` | Find the keywords a domain ranks for | paid per call |
+| `looot-email-verification` | Verify an email address | paid per call |
+| `looot-enrich-a-company` | Enrich a company | paid per call |
+| `looot-enrich-a-person` | Enrich a person | paid per call |
+| `looot-find-phone-numbers` | Find a phone number | paid per call |
+| `looot-find-professional-emails` | Find a professional email | paid per call |
+| `looot-google-maps-reviews` | Read Google Maps reviews | paid per call |
+| `looot-google-serp` | Read a Google results page | paid per call |
+| `looot-job-postings` | Search job postings | paid per call |
+| `looot-keyword-volume` | Check keyword volume and CPC | paid per call |
+| `looot-local-business-search` | Find local businesses | paid per call |
+| `looot-meta-ads-library` | Read a company's Meta ads | paid per call |
+| `looot-reddit-search` | Search Reddit | paid per call |
+| `looot-tiktok-search` | Search TikTok | paid per call |
+| `looot-youtube-transcript` | Get a YouTube transcript | paid per call |
 
 Each free skill ends with a "Next step" that names one of these paid jobs, for example `looot-website-tech-stack` leads to `looot-company-list-builder`.
 
@@ -107,7 +107,7 @@ See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use
 
 ## Cost
 
-The skill files are free. Searching and inspecting are free. The ten free skills run at $0. A paid run is billed per call at the price `looot inspect` shows first, and needs a top-up of $5 minimum, since looot has no trial credit.
+The skill files are free. Searching and inspecting are free. The ten free skills run at $0. A paid run is billed per call at the price `looot inspect` shows first, and is paid from your balance: a new account gets $2 of credit once, and top-ups after that are $5 minimum.
 
 ## Checks
 
